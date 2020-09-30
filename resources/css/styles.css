@@ -1,15 +1,19 @@
 body{
     font-family: Helvetica;
     font-size: 20px;
+    color: white;
     line-height: 1.5;
     margin: 0;
+    background-color: #C70039;
 }
 
 .page-header {
     display: flex;
     flex-direction: row;
+    padding: 0.5em;
     justify-content: space-between;
     background-color: #111D5E;
+    color: white;
 }
 
 .page-header ul{
@@ -34,18 +38,52 @@ body{
 }
 
 .item {
-    border: solid 1px;
+    border: solid 2px;
     width: 300px;
     margin-top: 30px;
 }
 
 button {
     width: auto;
-    font-size: 0.5em;
+    font-size: 0.75em;
     margin: 1em 0;
     align-self: center;
     padding: 0.5em 1em;
+    border-radius: 0.25em;
     background-color: slategrey;
     color: white;
     border: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+input {
+    padding: 0.5em;
+    font-size: 0.75em;
+    border: 1px solid;
+    border-radius: 0.25em;
+}
+
+#item-list > li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cart-total {
+    font-size: 1.5em;
+    border-top: 2px solid;
+    padding: 0.5em;
+    margin-top: 0.5em;
+}
+
+footer {
+    background-color: #111D5E;
+    margin-top: 4em;
+    padding: 0.5em;
 }
